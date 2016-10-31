@@ -141,7 +141,8 @@ int main ( int argc , char** argv ) {
 	}
 
 	printf ( "Succesfully %scompressed file %s, output file: %s, compression ratio: %.2f%% (%zu/%zu)\n" ,
-			 mode == 0 ? "de" : "" , argv [ 1 ] , outname , ( ( float )result_size / fileSize ) * 100 , result_size , fileSize );
+		mode == 0 ? "de" : "" , argv [ 1 ] , outname , ( ( float )result_size / fileSize ) * 100 , 
+		result_size , fileSize );
 
 	fclose ( outfile );
 	free ( compressed_buffer );
