@@ -60,6 +60,7 @@ enum huffMode {
 
 
 int processMode ( const char* param ) {
+	
 	size_t len = strlen ( param );
 	if ( len == 1 ) {
 		switch ( param [ 0 ] ) {
