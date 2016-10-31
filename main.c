@@ -46,6 +46,7 @@ size_t compress ( char* inputbuffer , size_t length , char** outputbuffer ) {
 }
 
 size_t decompress ( char* inputbuffer , size_t length , char** outputbuffer ) {
+	
 	*outputbuffer = 0;
 	inputbuffer = 0;
 	if ( length > 3 ) { }
